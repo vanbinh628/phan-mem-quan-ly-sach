@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="92"
+        android:background="@color/mauDoDam"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageButton
+            android:id="@+id/ibtnThoatManHinhChonTinhThanhPho"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="44"
+            android:background="@drawable/btn_topbar_click"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="12"
+            android:background="@color/mauDoDam"
+            android:gravity="center_vertical"
+            android:text="Danh sách"
+            android:textAppearance="@style/CustomTextHeader"
+            android:textColor="@color/mauTrang" />
+
+        <Button
+            android:id="@+id/btnXacNhanTinhThanhPho"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="44"
+            android:background="@drawable/btn_topbar_click"
+            android:text="Xong"
+            android:textAppearance="@style/CustomTextLarge"
+            android:textColor="@color/mauTrang" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:fillViewport="true"
+        android:isScrollContainer="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <EditText
+                android:id="@+id/edittimkiem_qls"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="31"
+                android:background="@null"
+                android:completionThreshold="1"
+                android:drawableLeft="@drawable/vector_ic_search"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:hint="Tìm nhanh"
+                android:inputType="textPersonName"
+                android:paddingLeft="8dp"
+                android:textAppearance="@style/CustomText" />
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:drawableRight="@drawable/ic_location"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Tự động xác định vị trí"
+                android:textAppearance="@style/CustomText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="31"
+                android:background="@drawable/textview_clicked"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/txtItemDoiQuocGia"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="Danh mục sách"
+                    android:textAppearance="@style/CustomTextBold" />
+
+                <TextView
+                    android:id="@+id/txtthem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="75"
+                    android:drawableRight="@drawable/ic_add"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="Thêm"
+                    android:textAppearance="@style/CustomTextBold" />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvdanhmucsach"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

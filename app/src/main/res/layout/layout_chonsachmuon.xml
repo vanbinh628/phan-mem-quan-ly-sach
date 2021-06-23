@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="42"
+        android:background="@color/mauXamNhat"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txtTieuDeLoaiHinhCustomDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/mauDoDam"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="10dp"
+            android:text="Sách"
+            android:textAppearance="@style/CustomTextHeader"
+            android:textColor="@color/mauTrang" />
+
+        <EditText
+            android:id="@+id/btntimkiem_muon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/mauTrang"
+            android:drawableLeft="@drawable/vector_ic_search"
+            android:drawablePadding="5dp"
+            android:hint="tìm nhanh"
+            android:paddingLeft="5dp"
+            android:textAppearance="@style/CustomText" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lvchonsachmuon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="15"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="42"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="65"
+                android:gravity="center_vertical"
+                android:text="Hạn Trả"
+                android:textColor="@color/mauDen" />
+
+            <EditText
+                android:id="@+id/edithantra_muon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:focusable="false"
+                android:layout_weight="35"
+                android:background="@drawable/duongvien_goctron" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnhuy_muon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="#939191"
+                android:text="Hủy"
+                android:textAppearance="@style/CustomTextHeader" />
+
+            <Button
+                android:id="@+id/btnmuon_muon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:background="@color/mauXanhDam"
+                android:text="Mượn"
+                android:textAppearance="@style/CustomTextHeader" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

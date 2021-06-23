@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txttenkh_tt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="ten sach"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtgioitinh_tt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="ten sach"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtngaysinh_tt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="ten sach"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtdienthoai_tt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="ten sach"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imagkh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:src="@mipmap/ic_launcher" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtdiachi_tt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Dia chi"
+        android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="350dp"
+            android:fillViewport="false"
+            android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="600dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/mauXam"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="20"
+                        android:gravity="center"
+                        android:text="tên sách"
+                        android:textSize="16sp"
+                        android:background="@drawable/view_right_border"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="20"
+                        android:gravity="center"
+                        android:text="số lượng"
+                        android:textSize="16sp"
+                        android:background="@drawable/view_right_border"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="20"
+                        android:gravity="center"
+                        android:text="số tiền"
+                        android:textSize="16sp"
+                        android:background="@drawable/view_right_border"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="20"
+                        android:gravity="center"
+                        android:text="ngày mượn"
+                        android:textSize="16sp"
+                        android:background="@drawable/view_right_border"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="20"
+                        android:gravity="center"
+                        android:text="hạn trả"
+                        android:textSize="16sp"
+                        android:background="@drawable/view_right_border"/>
+                </LinearLayout>
+
+                <GridView
+                    android:id="@+id/griddata"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:numColumns="5"></GridView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btntra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Trả Sách" />
+
+        <Button
+            android:id="@+id/btnmuon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mượn" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#ff0d00"
+            android:drawableLeft="@drawable/ic_home"
+            android:gravity="center"
+            android:text="Home"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="100"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/common_google_signin_btn_icon_dark_normal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Tên tài khoản"
+                android:gravity="center|left"
+                android:layout_weight="40" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:gravity="right|center"
+
+                android:text="Thông tin"
+                android:drawableRight="@drawable/ic_next"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvthemsach"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@drawable/view_bottom_border"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:drawableRight="@drawable/ic_next"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:text="Thêm Sách"
+                android:textAppearance="@style/CustomText"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tvlichsu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@drawable/view_bottom_border"
+                android:drawableLeft="@mipmap/ic_history"
+                android:drawableRight="@drawable/ic_next"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:text="Lịch Sử"
+                android:textAppearance="@style/CustomText"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tvquanly"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@drawable/view_bottom_border"
+                android:drawableLeft="@mipmap/ic_quanly"
+                android:drawableRight="@drawable/ic_next"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:text="Quản Lý Sách"
+                android:textAppearance="@style/CustomText"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/tvmuonsach"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@drawable/view_bottom_border"
+                android:drawableLeft="@mipmap/ic_muon"
+                android:drawableRight="@drawable/ic_next"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:text="Mượn Sách"
+                android:textAppearance="@style/CustomText"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/tvtrasach"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:background="@drawable/view_bottom_border"
+                android:drawableLeft="@mipmap/ic_tra"
+                android:drawableRight="@drawable/ic_next"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:text="Trả Sách"
+                android:textAppearance="@style/CustomText"
+                android:textColor="#000000" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

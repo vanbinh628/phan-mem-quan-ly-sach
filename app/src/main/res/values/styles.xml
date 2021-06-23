@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CustomText" parent="@style/TextAppearance.Design.Counter">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="CustomTextListView" parent="@style/Widget.AppCompat.ListView">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="CustomTextBold" parent="@style/TextAppearance.Design.Counter">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CustomTabWidgetText" parent="@style/TextAppearance.Design.Counter">
+        <item name="android:textSize">8.5sp</item>
+    </style>
+
+    <style name="CustomTextHeader" parent="@style/TextAppearance.Design.Counter">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CustomTextLarge" parent="@style/TextAppearance.Design.Counter">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+</resources>

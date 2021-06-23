@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="mauDoClick">#AE0C09</color>
+    <color name="mauTrang">#FFFFFF</color>
+    <color name="mauXam">#d6d7d7</color>
+    <color name="mauDoDam">#CC1902</color>
+    <color name="mauXamNhat">#DDDDDD</color>
+    <color name="mauList">#EFEFEF</color>
+    <color name="mauChu">#333333</color>
+    <color name="mauXanhDam">#00AA00</color>
+    <color name="mauDen">#000000</color>
+    <color name="mauXanhLaCay">#4fdb2f</color>
+    <color name="mauTrong35">#59ffffff</color>
+    <color name="mauLamNhat">#6de1fe</color>
+</resources>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#ff0d00"
+        android:weightSum="100">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="55"
+            android:gravity="center"
+            android:text="Thêm sách"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtluu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:gravity="right|center"
+            android:onClick="OnClickLuu"
+            android:paddingRight="10dp"
+            android:text="LƯU LẠI"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mauList"
+            android:text="Thông Tin Sách"
+            android:textColor="#000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:background="@drawable/view_bottom_border">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:gravity="center_vertical"
+                    android:layout_weight="65"
+                    android:text="Tên Sách"
+                    android:textColor="@color/mauDen" />
+
+                <EditText
+                    android:id="@+id/edittensach"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="35"
+                    android:background="@drawable/duongvien_goctron" />
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:background="@drawable/view_bottom_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="65"
+                android:gravity="center_vertical"
+                android:text="Loại Sách"
+                android:textColor="@color/mauDen" />
+
+            <EditText
+                android:id="@+id/editloai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="35"
+                android:background="@drawable/duongvien_goctron" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:background="@drawable/view_bottom_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="65"
+                android:gravity="center_vertical"
+                android:text="Tác Giả"
+                android:textColor="@color/mauDen" />
+
+            <EditText
+                android:id="@+id/edittacgia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="35"
+                android:background="@drawable/duongvien_goctron" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/mauList"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:background="@drawable/view_bottom_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="65"
+                android:gravity="center_vertical"
+                android:text="Ngày Nhập"
+                android:textColor="@color/mauDen" />
+
+            <EditText
+                android:id="@+id/editngaynhap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="35"
+                android:background="@drawable/duongvien_goctron"
+                android:inputType="date"
+                android:focusable="false"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:background="@drawable/view_bottom_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="65"
+                android:gravity="center_vertical"
+                android:text="Vị trí"
+                android:textColor="@color/mauDen" />
+
+            <EditText
+                android:id="@+id/editvitri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="35"
+                android:background="@drawable/duongvien_goctron" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:background="@drawable/view_bottom_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="65"
+                android:gravity="center_vertical"
+                android:text="Số Lượng"
+                android:textColor="@color/mauDen" />
+
+            <EditText
+                android:id="@+id/editsoluong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="35"
+                android:background="@drawable/duongvien_goctron"
+                android:inputType="number" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:background="@drawable/view_bottom_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="65"
+                android:gravity="center_vertical"
+                android:text="Tiền thuê"
+                android:textColor="@color/mauDen" />
+
+            <EditText
+                android:id="@+id/edittien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="35"
+                android:background="@drawable/duongvien_goctron"
+                android:inputType="number" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hình Cover"
+            android:background="@color/mauList"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="100">
+
+            <ImageView
+                android:id="@+id/img_sach_item_them"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="70"
+                android:src="@drawable/notimage" />
+
+            <TextView
+                android:id="@+id/txtchoose"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:drawableRight="@drawable/ic_next"
+                android:gravity="center_vertical"
+                android:text="Đổi hình sách" />
+        </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
